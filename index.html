@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="images/OE.jpg" />
+    <title>University CGPA Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="bg-slate-700 w-full h-screen">
+      <header
+        class="bg-purple-500 p-5 flex flex-row gap-2 items-center rounded-b-2xl"
+      >
+        <div class="w-full">
+          <h1
+            class="text-center text-white text-base md:text-4xl font-extrabold"
+          >
+            University CGPA Calculator
+          </h1>
+        </div>
+      </header>
+      <!-- main -->
+      <div class="py-5">
+        <main
+          class="max-w-5xl bg-slate-200 flex flex-col gap-3 items-center justify-center h-[calc(100vh-128px)] mx-auto rounded-2xl"
+        >
+          <!-- input field -->
+          <div class="flex flex-row gap-2 items-center">
+            <input
+              type="text"
+              onkeyup="calculationOEC()"
+              class="md:w-4/12 w-8/12 text-lime-500 py-3 px-4 rounded-md outline-none border border-lime-500"
+              id="input"
+            />
+            <p class="text-2xl text-black font-bold"></p>
+          </div>
+          <!-- Output field -->
+          <div class="flex flex-row gap-3 items-center">
+            <h2 class="text-4xl text-lime-500 font-bold" id="output"></h2>
+            <p class="text-2xl text-black font-bold"></p>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script src="script.js/calculator.js"></script>
+  </body>
+</html>
